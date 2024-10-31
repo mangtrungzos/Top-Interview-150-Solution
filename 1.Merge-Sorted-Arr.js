@@ -1,4 +1,3 @@
-Merge-Sorted-Arr.js
 // Idea: Pointer
 // Runtime: 0ms | Beats 100%
 var merge = function(nums1, m, nums2, n) {
