@@ -8,14 +8,20 @@
 // - The remaining elements of nums are not important as well as the size of nums.
 // - Return k
 
+// Cho một mảng số nguyên nums và một số nguyên val.
+// Hãy xóa tất cả các phần tử có giá trị bằng val trong nums tại chỗ (không tạo mảng mới).
+// Thứ tự các phần tử trong mảng có thể thay đổi. Sau đó, trả về "số lượng phần tử trong nums không bằng val".
+// Giả sử số lượng phần tử trong nums không bằng val là k, để đáp ứng yêu cầu, bạn cần thực hiện các điều sau:
+// Thay đổi mảng nums sao cho k phần tử đầu tiên trong nums chứa các phần tử không bằng val.
+// Các phần tử còn lại trong nums không quan trọng, và kích thước của nums cũng không quan trọng.
+// Trả về giá trị k.
+
 // Idea :
 /**
- * loop nums -> if nums[i] = val
- * => slice(0,1)
- * i--
- * return loop
- * still i = 0 | if i not equal val
- * => else
+ * let k initial 0
+ * loop nums -> if nums[i] !== val
+ * => nums k = nums i
+ * k++
  */
 
 var removeElement = function(nums, val) {
@@ -32,7 +38,6 @@ var removeElement = function(nums, val) {
 var nums = [0,1,2,2,3,0,4,2], val = 2
 removeElement(nums, val);
 console.log(nums);
-
 
 // Example 1:
 //
