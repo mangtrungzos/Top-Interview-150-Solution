@@ -8,6 +8,7 @@
 // - The remaining elements of nums are not important as well as the size of nums.
 // - Return k
 
+// Yeu Cau :
 // Cho một mảng số nguyên nums và một số nguyên val.
 // Hãy xóa tất cả các phần tử có giá trị bằng val trong nums tại chỗ (không tạo mảng mới).
 // Thứ tự các phần tử trong mảng có thể thay đổi. Sau đó, trả về "số lượng phần tử trong nums không bằng val".
