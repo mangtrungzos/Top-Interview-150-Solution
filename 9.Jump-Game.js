@@ -36,7 +36,7 @@ var canJump = function(nums) {
 * nums = [2, 3, 1, 1, 4] | length = 5
 *
 * Loop i = nums.length - 2 = 3
-* if (i + nums[i] >= goal) : 3 + 1 >= goal: 3 | true
+* if (i + nums[i] >= goal) : 3 + 1 >= goal: 4 | true
 * => goal = 3
 *
 * Loop i = 2
